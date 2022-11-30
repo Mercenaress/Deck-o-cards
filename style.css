@@ -1,0 +1,148 @@
+body {
+    background-color: #fffff6;
+}
+
+.card-stack {
+    width: 250px;
+    height: 400px;
+    margin: 150px auto;
+}
+
+.card--red,
+.card--orange,
+.card--yellow,
+.card--lime,
+.card--green,
+.card--blue,
+.card--indigo,
+.card--purple,
+.card--pink {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    transform-origin: center 600px;
+    transition: all .6s linear;
+    border-radius: 20px;
+}
+
+.card--red {
+    background-color: #FFADAD;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--red {
+    transform: rotate(40deg);
+}
+
+.card--orange {
+    background-color: #FFD6A5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--orange {
+    transform: rotate(30deg);
+}
+
+.card--yellow {
+    background-color: #FDFFB6;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--yellow {
+    transform: rotate(20deg);
+}
+
+.card--lime {
+    background-color: #CAFFBF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--lime {
+    transform: rotate(10deg);
+}
+
+.card--green {
+    background-color: #AFECBB;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card--blue {
+    background-color: #9BF6FF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--blue {
+    transform: rotate(-10deg);
+}
+
+.card--indigo {
+    background-color: #A0C4FF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--indigo {
+    transform: rotate(-20deg);
+}
+
+.card--purple {
+    background-color: #BDB2FF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--purple {
+    transform: rotate(-30deg);
+}
+
+.card--pink {
+    background-color: #FFC6FF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.card-stack:hover .card--pink {
+    transform: rotate(-40deg);
+}
+
+.heart {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    position: relative;
+    transform: rotate(45deg);
+    margin: 30px;
+}
+
+.heart::before,
+.heart::after {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+}
+
+.heart::before {
+    left: -20px;
+}
+
+.heart::after {
+    top: -20px;
+}
